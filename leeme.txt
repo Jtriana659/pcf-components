@@ -1,0 +1,20 @@
+este codigo crea un input y un boton en el index.ts del testBtn2
+
+se modifico en 4 partes:
+1. se creo una variable de tipo input y otra de tipo button
+2. en init se creo el input
+3. en init se creo el boton
+4. se agrego un listener al boton para que al hacer click muestre el valor del input en una alerta
+
+File: testv6/testBtn2/index.ts
+--- a/file:///c%3A/PCFversion/testv6/testBtn2/index
+
+
+variables:
+  None
+
+Resumen:
+  este codigo esta conformado por un boton  que la presion del mismo muestra el valor del input en una alerta tambien tienes uno stylos en css
+
+  Adicional toma informacion del context como el nombre del usuario y el GuiD esto lo toma de la entidad de systemuser y lo muestra en un notificacion alert dialog
+  y tambien tiene un input que al presionar el boton muestra el valor del input en una alerta

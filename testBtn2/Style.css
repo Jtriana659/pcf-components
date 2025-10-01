@@ -1,0 +1,14 @@
+.MyButton {
+    background-color: #0078D4; /* Azul de Microsoft/Dynamics */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.MyButton:hover {
+    background-color: #005A9E; /* Azul más oscuro al pasar el ratón */
+}
