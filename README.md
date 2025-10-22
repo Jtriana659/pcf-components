@@ -58,6 +58,7 @@ Al hacer clic, aparece un cuadro de diálogo que muestra:
 
 User Name: jeisson Triana
 User ID: {C970A9B5-5107-EE11-8F6D-00224803D65E}
+
 <img width="276" height="285" alt="image" src="https://github.com/user-attachments/assets/37daf303-34a6-425a-bdd8-b92d59246789" />
 <img width="267" height="132" alt="image" src="https://github.com/user-attachments/assets/1d9dc126-ea70-4048-900c-8533ec787456" />
 
