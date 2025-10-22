@@ -29,8 +29,6 @@ Muestra los datos obtenidos en una ventana de alerta (alert dialog) en el format
 User Name: [Nombre del Usuario], 
 User ID: [GUID del Usuario]
 
-<img width="655" height="383" alt="image" src="https://github.com/user-attachments/assets/142e8576-1939-4de2-8eff-1a465cddbbea" />
-
 Diseño y estilo:
 El botón cuenta con estilos definidos en un archivo CSS personalizado , que ajusta su color, tamaño, márgenes y otros aspectos visuales para mantener una apariencia consistente con la interfaz de Dynamics.
 Estructura general del código:
@@ -41,23 +39,26 @@ Defina las propiedades del componente, incluyendo el campo de entrada ( input) q
 Archivo index.ts(o main.ts):
 Contiene la lógica funcional:
 
+<img width="655" height="383" alt="image" src="https://github.com/user-attachments/assets/142e8576-1939-4de2-8eff-1a465cddbbea" />
+
 Manejador del evento onClick.
 Llamada al contexto para obtener la información del usuario.
 Ejecución del alert()para mostrar los datos.
 
 Archivo style.css:
 Defina el estilo visual del botón, incluyendo colores, bordes y espaciado.
+<img width="506" height="290" alt="image" src="https://github.com/user-attachments/assets/8f1858db-9dcd-4b92-9877-dba634bf8ab9" />
 
 Ejemplo visual:
 
 📍 En el formulario de una cuenta (“Cuenta”) :
 El campo "responsable" muestra el botón “Click Me” .
 Al hacer clic, aparece un cuadro de diálogo que muestra:
-<img width="276" height="285" alt="image" src="https://github.com/user-attachments/assets/37daf303-34a6-425a-bdd8-b92d59246789" />
-<img width="267" height="132" alt="image" src="https://github.com/user-attachments/assets/1d9dc126-ea70-4048-900c-8533ec787456" />
 
 User Name: jeisson Triana
 User ID: {C970A9B5-5107-EE11-8F6D-00224803D65E}
+<img width="276" height="285" alt="image" src="https://github.com/user-attachments/assets/37daf303-34a6-425a-bdd8-b92d59246789" />
+<img width="267" height="132" alt="image" src="https://github.com/user-attachments/assets/1d9dc126-ea70-4048-900c-8533ec787456" />
 
 Propósito del componente:
 Este componente es útil para mostrar información contextual del usuario o para probar la conexión y lectura de datos del contexto de Dynamics en desarrollos PCF. También puede adaptarse para funcionalidades más avanzadas como registro de auditorías o validaciones basadas en el usuario actual.
