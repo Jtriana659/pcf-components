@@ -1,3 +1,70 @@
+# ⚡ PCF Control: Botón de Alerta de Información de Usuario (`testBtn2`)
+
+Este es un componente básico construido con Power Apps Component Framework (PCF) para incrustar un botón interactivo en formularios y cuadros de mandos de Power Apps (Model-Driven Apps). Su función principal es mostrar una alerta modal con información clave del usuario actual.
+
+## 🌟 Funcionalidad del Componente
+
+El control `testBtn2` añade un botón personalizado con el estilo de Microsoft/Dynamics. Al hacer clic, el control invoca una función nativa de la API de Power Apps para:
+
+1.  Obtener los detalles del usuario actual a través del `context.userSettings`.
+2.  Desplegar un **Diálogo de Alerta (Alert Dialog)** en la aplicación anfitriona.
+3.  Mostrar el **Nombre de Usuario** y el **ID de Usuario** dentro del diálogo.
+
+### Caso de Uso Principal
+
+Este componente es ideal como plantilla de inicio para PCF, demostrando cómo:
+* Integrar un elemento UI simple (`<button>`) en el *host* de Power Apps.
+* Acceder a utilidades del entorno (como `context.navigation.openAlertDialog`).
+* Acceder a la información de la sesión (`context.userSettings`).
+
+## 🛠️ Tecnologías y Estructura
+
+* **Framework:** Power Apps Component Framework (PCF)
+* **Lenguaje:** TypeScript (`index.ts`)
+* **Estilos:** CSS3 (`Style.css`)
+* **Target:** Aplicaciones basadas en modelos (Model-Driven Apps) y Power Apps en general.
+
+### Archivos Clave
+
+| Archivo | Descripción |
+| :--- | :--- |
+| `index.ts` | **Lógica principal del componente.** Implementa la interfaz `StandardControl`. Contiene el código para crear el botón, adjuntar el *event listener* y llamar a `context.navigation.openAlertDialog`. |
+| `Style.css` | Define el estilo del botón (`.MyButton`), utilizando colores corporativos (`#0078D4`) y efectos hover. |
+| `manifest.xml` | El manifiesto del PCF. Define el nombre del control (`testBtn2`), la versión (`0.0.1`), las rutas de los recursos (TS y CSS) y una propiedad de ejemplo requerida (`sampleProperty`). |
+
+## ⚙️ Configuración y Uso
+
+### Propiedades (Manifest)
+
+El control requiere que se le asigne una propiedad en el *Manifest*, aunque el valor no se utiliza directamente en la lógica del botón:
+
+| Nombre | Tipo | Uso | Requerido |
+| :--- | :--- | :--- | :--- |
+| `sampleProperty` | `SingleLine.Text` | Bound (Enlazada) | Sí |
+
+### Pasos para Implementar en Power Apps
+
+1.  Construir el proyecto PCF (usando `npm run build` y luego `pac pcf push`).
+2.  Importar la solución que contiene el control en el entorno de Power Apps/Dynamics 365.
+3.  Agregar el control `testBtn2` a un campo de un formulario o a una cuadrícula en el *Customizer* de la aplicación.
+
+## 💻 Desarrollo Local (CLI)
+
+Para desarrollar y probar este control, es necesario tener las herramientas de Power Platform (PAC CLI) instaladas.
+
+1.  Instalar las dependencias de Node.js:
+    ```bash
+    npm install
+    ```
+2.  Iniciar el servidor de pruebas local (requiere autenticación PAC CLI):
+    ```bash
+    npm start
+    ```
+    (Esto abrirá la herramienta de prueba local para Power Apps Component Framework).
+
+---
+
+
 # pcf-components
 Control PCF (PowerApps Component Framework) fue desarrollado en TypeScript y Javascript
 
